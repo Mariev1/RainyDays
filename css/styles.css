@@ -1,0 +1,22 @@
+header {
+  background-color: #0a3641;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+}
+
+main section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+main section li {
+  display: inline-block;
+}
