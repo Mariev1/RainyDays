@@ -47,6 +47,7 @@ p {
 /* header */
 .container-1 {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -56,6 +57,27 @@ header {
   margin: auto;
   padding: 0 20px 0 20px;
   min-height: 40px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-1 {
+  flex: 0 1 35vw;
+  align-self: flex-end;
+  font-weight: 600;
+}
+
+.nav-2 {
+  flex: 0 1 30vw;
+  text-align: center;
+}
+
+.nav-3 {
+  flex: 0 1 35vw;
+  text-align: end;
+  align-self: flex-end;
+  font-weight: 600;
 }
 
 header a {
@@ -76,11 +98,11 @@ header img {
 }
 
 header li {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 20px 10px;
 }
 
 header i {
-  padding: 0 10px;
+  padding: 0 10px 20px 10px;
 }
 
 header input {
@@ -92,6 +114,10 @@ main section ul {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+main {
+  padding-top: 168px;
 }
 
 .cta {
@@ -111,13 +137,13 @@ main section ul {
 #ctamen {
   position: absolute;
   left: 33%;
-  bottom: 15%;
+  top: 75%;
 }
 
 #ctawomen {
   position: absolute;
   right: 33%;
-  bottom: 15%;
+  top: 75%;
 }
 
 .welcome {
@@ -128,9 +154,6 @@ main section ul {
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: left, right;
-}
-
-.welcome a {
 }
 
 .sellingpoints li {
@@ -160,37 +183,11 @@ main section ul {
   padding: 0 1em 0 1em;
 }
 
-footer {
-  color: white;
-  background-color: #0a3641;
-}
-.footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0px;
-  align-items: center;
-  grid-gap: 10px;
-}
-
-footer li {
-  font-family: "Tinos", serif;
-  list-style-type: none;
-  text-decoration: none;
-  margin: 10px 0px 10px 0px;
-  padding: 0px;
-}
-footer ul {
-  padding: 0px;
-  margin-left: 40px;
-}
 h3 {
   font-size: 1.5em;
   font-weight: 600;
   margin-left: 40px;
   align-items: center;
-}
-footer i {
-  margin-left: 40px;
 }
 
 /* Home Page */
@@ -243,6 +240,36 @@ div p {
   width: 100%;
 }
 
+/* footer */
+
+footer {
+  color: white;
+  background-color: #0a3641;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0px;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+footer li {
+  font-family: "Tinos", serif;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+footer ul {
+  padding: 0px;
+  margin-left: 40px;
+}
+
+footer i {
+  margin-left: 40px;
+}
+
 @media (min-width: 600px) {
   .welcome {
     display: grid;
@@ -262,6 +289,14 @@ div p {
   .arrivals {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px;
+    align-items: center;
+    grid-gap: 10px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -273,5 +308,13 @@ div p {
   }
   .arrivals {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px;
+    align-items: center;
+    grid-gap: 10px;
   }
 }
