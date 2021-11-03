@@ -1,80 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-}
-header {
-  display: flex;
-  align-items: center;
-  background-color: #0a3641;
-}
-header img {
-  padding: 0;
-  margin: 0;
-  max-height: 10vh;
-  padding-left: 22.5%;
-}
-
-nav {
-  margin-left: 25px;
-  text-align: center;
-  align-items: baseline;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  text-align: center;
-  align-items: baseline;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.5em;
 }
 
 .active {
   text-decoration: underline;
 }
 
-main section ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.sellingpoints li {
-  display: inline-block;
-  background-color: #099999;
-  color: white;
-  font-weight: 300;
-}
-.cta {
-  background-color: #e37500;
-  color: white;
+a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5em;
-  padding: 20px 30px;
-  border-radius: 50px;
 }
 
-.sellingpoints ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #099999;
-  min-height: 4vh;
-}
-
-.sellingpoints li {
-  padding: 0.5rem 1rem;
-  display: block;
+ul {
+  list-style: none;
 }
 
 h1,
@@ -94,6 +37,127 @@ h2 {
 p {
   font-weight: 600;
   margin: 5px 5px 0px 50px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/* header */
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #0a3641;
+  color: #fff;
+  margin: auto;
+  padding: 0 20px 0 20px;
+  min-height: 40px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  width: 220px;
+}
+
+header li {
+  padding: 0 10px 0 10px;
+}
+
+header i {
+  padding: 0 10px;
+}
+
+header input {
+  padding: 0 10px;
+}
+
+main section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #e37500;
+  color: white;
+  text-decoration: none;
+  width: 260px;
+  height: auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 20px 30px;
+  border-radius: 50px;
+}
+
+#ctamen {
+  position: absolute;
+  left: 33%;
+  bottom: 15%;
+}
+
+#ctawomen {
+  position: absolute;
+  right: 33%;
+  bottom: 15%;
+}
+
+.welcome {
+  display: inline-block;
+  width: 100%;
+  height: 800px;
+  background: url(/images/menheader.jpg), url(/images/womenheader.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left, right;
+}
+
+.welcome a {
+}
+
+.sellingpoints li {
+  display: inline-block;
+  background-color: #099999;
+  color: white;
+  font-weight: 300;
+}
+
+.sellingpoints ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #099999;
+  min-height: 4vh;
+}
+
+.sellingpoints li {
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.sellingpoints i {
+  padding: 0 1em 0 1em;
 }
 
 footer {
@@ -187,12 +251,6 @@ div p {
     align-items: center;
     padding: 0;
     margin: 0;
-  }
-  .men img {
-    width: 1fr;
-  }
-  .woman img {
-    width: 1fr;
   }
 
   .socialimg {
