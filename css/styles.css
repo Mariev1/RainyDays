@@ -45,69 +45,97 @@ p {
 }
 
 /* header */
-.container-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 header {
   background-color: #0a3641;
-  color: #fff;
-  margin: auto;
-  padding: 0 20px 0 20px;
-  min-height: 40px;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-}
-
-.nav-1 {
-  flex: 0 1 35vw;
-  align-self: flex-end;
-  font-weight: 600;
-}
-
-.nav-2 {
-  flex: 0 1 30vw;
   text-align: center;
+  position: fixed;
+  z-index: 900;
+  width: 100%;
+  height: 40px;
 }
-
-.nav-3 {
-  flex: 0 1 35vw;
-  text-align: end;
-  align-self: flex-end;
-  font-weight: 600;
+.logo {
+  background-color: #0a3641;
+  width: 100%;
+  height: 40px;
 }
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-header ul {
+.nav {
   display: flex;
+  justify-content: space-between;
+  background-color: #0a3641;
+  text-align: center;
+  z-index: 900;
+  width: 100%;
+  height: 40px;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background-color: #fff;
+  height: 3px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: #0a3641;
+  width: 100%;
+  display: none;
+}
+nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: #099999;
+}
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+.lugu {
+  position: absolute;
+  text-align: right;
 }
 
-header img {
-  width: 220px;
-}
-
-header li {
-  padding: 0 10px 20px 10px;
-}
-
-header i {
-  padding: 0 10px 20px 10px;
-}
-
-header input {
-  padding: 0 10px;
-}
+/* Main */
 
 main section ul {
   list-style-type: none;
@@ -135,13 +163,13 @@ main {
 }
 
 #ctamen {
-  position: absolute;
+  position: relative;
   left: 33%;
   top: 75%;
 }
 
 #ctawomen {
-  position: absolute;
+  position: relative;
   right: 33%;
   top: 75%;
 }
@@ -153,7 +181,7 @@ main {
   background: url(/images/menheader.jpg), url(/images/womenheader.jpg);
   background-size: 50%;
   background-repeat: no-repeat;
-  background-position: left, right;
+  background-position: top left, top right;
 }
 
 .sellingpoints li {
@@ -246,12 +274,16 @@ footer {
   color: white;
   background-color: #0a3641;
 }
+
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0px;
-  align-items: center;
-  grid-gap: 10px;
+  grid-auto-flow: row;
+  grid-gap: 0;
+}
+
+.footerel {
+  padding: 20px 0 20px 0;
+  border: 2px solid orange;
 }
 
 footer li {
@@ -267,10 +299,49 @@ footer ul {
 }
 
 footer i {
+  font-size: 2em;
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 600px) {
+.footerel h3 {
+  margin-bottom: 10px;
+}
+
+.footerel input {
+  margin: 0 0 0 40px;
+}
+
+.footerel p {
+  color: #fff;
+  font-weight: 300;
+  border: 2px solid red;
+}
+
+@media (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .lugu {
+    display: flex;
+  }
+  nav {
+    all: unset;
+    background-color: #0a3641;
+    color: #fff;
+  }
+  nav a {
+    color: #fff;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+  }
   .welcome {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -289,17 +360,9 @@ footer i {
   .arrivals {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0px;
-    align-items: center;
-    grid-gap: 10px;
-  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .socialimg {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -309,12 +372,13 @@ footer i {
   .arrivals {
     grid-template-columns: repeat(5, 1fr);
   }
-
   .footer {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: column;
     margin: 0px;
-    align-items: center;
-    grid-gap: 10px;
+    grid-gap: 1em;
+  }
+  .footerel input {
+    margin: 0 0 40px 40px;
   }
 }

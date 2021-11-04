@@ -16,33 +16,31 @@
 
 <body>
    <div class="container">
-    <header>
 
-        <!--Nav-->
-        <div class="container-1">
-            <div class="nav-1">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="men.html">Men</a></li>
-                        <li><a href="women.html">Women</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="nav-2">
-                <img src="images/Logo.png" alt="rainyday logo">
-            </div>
-            <div class="nav-3">
-                <input type="text" class="input" placeholder="Search">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-        </div>
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+          <a href="index.html"><img src="/images/Logo.png" alt="RainyDays logo"></a>
+      </div>
+      <div class="nav">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="lugu"></span>
+        </label>
+        <p>search</p>
+      </div>
     </header>
-   
-    <!--Welcome-->
+
+    <!-- Welcom -->
     <main>
        <section class="welcome">
                 <a href="men.html" class="cta" id="ctamen">Shop Men</a>
@@ -162,7 +160,7 @@
             <input type="email" placeholder="Your Email Adress">
             <button type="submit" class="button1">Subscribe</button>
         </form>
-       </div>
+    </div>
     </footer>
    </div>
 </body>
