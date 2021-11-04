@@ -144,11 +144,14 @@ nav a:hover {
   right: 70px;
 }
 .search-box input {
-  border: 3px solid #e37500;
+  border: 4px solid #e37500;
   height: 30px;
   width: 150px;
   border-radius: 30px;
   padding: 0px 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0a3641;
 }
 
 .search-box input:focus {
@@ -193,6 +196,9 @@ main section ul {
   padding: 0;
   text-align: center;
 }
+.shopping-bag i:hover {
+  color: #e37500;
+}
 
 main {
   padding-top: 168px;
@@ -235,7 +241,7 @@ main {
 }
 
 .sellingpoints li {
-  display: inline-block;
+  display: block;
   background-color: #099999;
   color: white;
   font-weight: 300;
@@ -366,6 +372,31 @@ footer i {
   font-weight: 300;
 }
 
+.footerel i:hover {
+  color: #e37500;
+}
+
+.sub input {
+  width: 250px;
+  height: 30px;
+  border: 4px solid #e37500;
+  padding-left: 10px;
+  color: #0a3641;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.sub button {
+  height: 30px;
+  width: 90px;
+  background: #e37500;
+  border: 4px solid #e37500;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: -4px;
+}
+
 @media (min-width: 840px) {
   .nav-toggle-label {
     display: none;
@@ -391,7 +422,9 @@ footer i {
   .search-box input {
     width: 220px;
   }
-
+  .sellingpoints li {
+    display: inline-block;
+  }
   .welcome {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
