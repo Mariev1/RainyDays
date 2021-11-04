@@ -385,6 +385,9 @@ footer i {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
+.sub input:focus {
+  outline: 0;
+}
 .sub button {
   height: 30px;
   width: 90px;
