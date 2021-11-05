@@ -44,6 +44,13 @@ h2 {
   justify-content: center;
   filter: drop-shadow(2px 2px 1px black);
 }
+.h-info {
+  display: flex;
+  justify-content: center;
+  color: #23778c;
+  font-weight: 600;
+  font-size: 3em;
+}
 p {
   font-weight: 600;
   margin: 5px 5px 0px 50px;
