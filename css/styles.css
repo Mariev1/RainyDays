@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,9 +49,12 @@ h2 {
 .h-info {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   color: #23778c;
-  font-weight: 600;
-  font-size: 3em;
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-top: 8vh;
 }
 p {
   font-weight: 600;
@@ -350,6 +355,27 @@ div p {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+}
+.p-about {
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  color: #000;
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 2vh;
+}
+.logo-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 10vh auto 5vh auto;
+  padding: 0 3em 0 3em;
+}
+
+.logo-bottom img {
+  min-width: 20vw;
+  height: auto;
 }
 
 /* footer */
