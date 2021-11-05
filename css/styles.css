@@ -378,6 +378,16 @@ div p {
   height: auto;
 }
 
+/* Contact */
+.banner-contact {
+  min-height: 50vh;
+  background-image: url(/images/banner-contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 /* footer */
 
 footer {
