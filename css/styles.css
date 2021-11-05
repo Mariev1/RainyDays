@@ -34,7 +34,6 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 1.5em;
-  margin: 0px 5px 0px 50px;
 }
 .h-banner {
   margin: 0;
@@ -55,10 +54,6 @@ h2 {
   font-weight: 800;
   font-size: 2.5em;
   margin-top: 8vh;
-}
-p {
-  font-weight: 600;
-  margin: 5px 5px 0px 50px;
 }
 
 .container {
@@ -99,6 +94,7 @@ header {
 .nav-toggle {
   display: none;
 }
+
 .nav-toggle-label {
   position: absolute;
   top: 8em;
@@ -240,6 +236,12 @@ main {
   border-radius: 50px;
 }
 
+.cta:hover {
+  color: #e37500;
+  background: #fff;
+  border: 5px solid #e37500;
+}
+
 #ctamen {
   position: absolute;
   left: 33%;
@@ -255,9 +257,9 @@ main {
 .welcome {
   display: inline-block;
   width: 100%;
-  height: 600px;
+  height: 80vh;
   background: url(/images/menheader.jpg), url(/images/womenheader.jpg);
-  background-size: 50%;
+  background-size: 50vw;
   background-repeat: no-repeat;
   position: relative;
   background-position: top left, top right;
@@ -311,8 +313,6 @@ div p {
   display: grid;
   grid-template-columns: 1fr;
   margin: 50px auto;
-  align-items: center;
-  margin: 20px;
 }
 .arrivals h1 {
   grid-column: -1/1;
@@ -345,6 +345,44 @@ div p {
 }
 .social img {
   width: 100%;
+}
+
+/* product card */
+.products {
+  text-align: center;
+  margin: 5px;
+  border: 2px solid #099999;
+}
+.products:hover {
+  border: 2px solid #e37500;
+}
+.products h2 {
+  margin-bottom: 8px;
+}
+.products p {
+  margin-bottom: 8px;
+}
+.rating {
+  color: #e37500;
+  margin-bottom: 10px;
+}
+
+/* mens and womens */
+.banner-men {
+  min-height: 60vh;
+  background-image: url(/images/banner-men.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top 25%;
+}
+.banner-women {
+  min-height: 60vh;
+  background-image: url(/images/banner-woman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top 20%;
 }
 
 /* About */
@@ -559,6 +597,7 @@ footer i {
   .h-banner {
     font-size: 8em;
   }
+
   .sellingpoints li {
     display: inline-block;
   }
