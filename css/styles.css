@@ -82,6 +82,7 @@ header {
 .logo img {
   width: 180px;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -206,13 +207,11 @@ nav a:hover {
   color: #fff;
   font-size: 1.5rem;
 }
-/* Main */
 
 main section ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 .shopping-bag i:hover {
   color: #e37500;
@@ -222,76 +221,6 @@ main {
   padding-top: 168px;
 }
 
-.cta {
-  display: inline-block;
-  background-color: #e37500;
-  color: white;
-  text-decoration: none;
-  width: 260px;
-  height: auto;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.5em;
-  padding: 20px 30px;
-  border-radius: 50px;
-}
-
-.cta:hover {
-  color: #e37500;
-  background: #fff;
-  border: 5px solid #e37500;
-}
-
-#ctamen {
-  position: absolute;
-  left: 33%;
-  top: 75%;
-}
-
-#ctawomen {
-  position: absolute;
-  right: 33%;
-  top: 75%;
-}
-
-.welcome {
-  display: inline-block;
-  width: 100%;
-  height: 80vh;
-  background: url(/images/menheader.jpg), url(/images/womenheader.jpg);
-  background-size: 50vw;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: top left, top right;
-}
-
-.sellingpoints li {
-  display: block;
-  background-color: #099999;
-  color: white;
-  font-weight: 300;
-}
-
-.sellingpoints ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #099999;
-  min-height: 4vh;
-}
-
-.sellingpoints li {
-  padding: 0.5rem 1rem;
-  display: block;
-}
-
-.sellingpoints i {
-  padding: 0 1em 0 1em;
-}
-
 h3 {
   font-size: 1.5em;
   font-weight: 600;
@@ -299,7 +228,71 @@ h3 {
   align-items: center;
 }
 
+.sellingpoints {
+  max-width: 100%;
+  margin: auto;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sellingpoints-item {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  background: #23778c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #099999;
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+}
+.sellingpoints-item i {
+  margin-right: 20px;
+  font-size: 28px;
+}
+
 /* Home Page */
+.welcome {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cta {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 700px;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top 5%;
+}
+.cta-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150%;
+}
+.cta-inner a {
+  padding: 20px 50px;
+  color: #fff;
+  background: #e37500;
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.cta-inner a:hover {
+  color: #e37500;
+  background: #fff;
+  border: 6px solid #e37500;
+}
 
 div p {
   color: #23778c;
@@ -316,6 +309,8 @@ div p {
 }
 .arrivals h1 {
   grid-column: -1/1;
+  font-weight: 600;
+  font-size: 50px;
 }
 
 .highlyrated img {
@@ -330,6 +325,8 @@ div p {
 }
 .highlyrated h1 {
   grid-column: -1/1;
+  font-weight: 600;
+  font-size: 50px;
 }
 
 .socialimg {
@@ -350,11 +347,11 @@ div p {
 /* product card */
 .products {
   text-align: center;
-  margin: 5px;
-  border: 2px solid #099999;
+  margin: 20px;
+  border: 1px solid #ccc;
 }
 .products:hover {
-  border: 2px solid #e37500;
+  border: 4px solid #e37500;
 }
 .products h2 {
   margin-bottom: 8px;
@@ -383,6 +380,31 @@ div p {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top 20%;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 90px 20px 0;
+}
+.breadcrumb a {
+  font-weight: 300;
+  color: #099999;
+}
+.breadcrumb p {
+  font-weight: 300;
+  color: #099999;
+}
+.breadcrumb-inner {
+  margin: 3px;
+}
+.sort {
+  margin: 3px;
+}
+select {
+  border: 1px solid #099999;
+  width: 150px;
+  height: 20px;
 }
 
 /* About */
@@ -598,16 +620,11 @@ footer i {
     font-size: 8em;
   }
 
-  .sellingpoints li {
-    display: inline-block;
+  .cta-men {
+    margin-left: 50%;
   }
-  .welcome {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    margin: 50px auto;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  .cta-women {
+    margin-right: 50%;
   }
 
   .socialimg {
@@ -631,6 +648,21 @@ footer i {
   .logo img {
     margin-top: 20px;
     width: 250px;
+  }
+
+  /* Welcome */
+  .cta {
+    min-width: 50%;
+  }
+
+  /* sellingpoints */
+  .sellingpoints-item {
+    min-width: 33.33%;
+    height: 60px;
+  }
+
+  .breadcrumb {
+    margin: 30px 20px 0;
   }
 
   /* landingpage */
