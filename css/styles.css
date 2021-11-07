@@ -877,6 +877,7 @@ label {
 }
 .active-progress {
   background-color: #099999;
+  border: 5px solid #e37500;
 }
 .progressbar i {
   color: #fff;
@@ -932,6 +933,43 @@ label {
 }
 .radio-input:checked + .radio-radio::after {
   transform: scale(1);
+}
+
+/* Payment Success */
+
+.success {
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+}
+.success h1 {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 800;
+}
+.success i {
+  color: #e37500;
+  margin-right: 20px;
+}
+.suc-p {
+  text-align: center;
+  font-weight: 300;
+}
+.mail-p {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 5vw;
+}
+.success h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #23778c;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /* footer */
@@ -1305,6 +1343,12 @@ footer i {
   }
   .radio-input:checked + .radio-radio::after {
     transform: scale(1);
+  }
+
+  .success {
+    max-width: 80%;
+    margin: auto;
+    height: auto;
   }
 
   /* footer */

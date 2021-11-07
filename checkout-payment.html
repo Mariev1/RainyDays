@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Quality rain jackets for all weather conditions">
     <script src="https://kit.fontawesome.com/c46cf9a407.js" crossorigin="anonymous"></script>
-    <title>RainyDays | Checkout | Billing</title>
+    <title>RainyDays | Checkout | Payment</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,8 +69,8 @@
             <h1>Checkout</h1>
             <div class="progressbar">
                 <p class="progress-1 active-progress"></p>
-                <p class="progress-2"></p>
-                <p class="progress-3"></p>
+                <p class="progress-2 active-progress"></p>
+                <p class="progress-3 active-progress"></p>
             </div>
             <div class="progressbar-txt">
                 <p class="progress-txt-inner">Shipping & Billing</p>
@@ -78,41 +78,29 @@
                 <p class="progress-txt-inner">Payment</p>
             </div>
            </section>
-           <section class="billing-form">
+           <section class="billing-form" id="shipping-radio">
                <h2>Shipping & Billing</h2>
-               <div class="form-wrapper">
-                <form action="submit.php" method="post">
-                    <div class="form-name">
-                     <label for="first-name">First Name</label>
-                     <input type="text" id="first-name" class="form-input">
-                    </div>
-                    <div class="form-name">
-                     <label for="last-name">Last Name</label>
-                     <input type="text" id="last-name" class="form-input">
-                    </div>
-                    <div class="form-box">
-                     <label for="adress">Adress</label>
-                     <input type="text" id="adress" class="form-input">
-                     <input type="text" id="adress" class="form-input">
-                    </div>
-                    <div class="form-name">
-                        <label for="zip">Zip Code</label>
-                        <input type="text" id="Zip" class="form-input">
-                       </div>
-                       <div class="form-name">
-                        <label for="town-city">Town/city</label>
-                        <input type="text" id="town-city" class="form-input">
-                       </div>
-                    <div class="form-box">
-                     <label for="phone">Phone Number</label>
-                     <input type="tel" id="phone" class="form-input">
-                    </div>
-                    <div class="form-box">
-                     <label for="email">Email</label>
-                     <input type="email" id="email" class="form-input">
-                    </div>
-                </form>
+               <div class="form-shipping">
+                   <label for="standard-shipping" class="radio">
+                    <input type="radio" id="standard-shipping" name="shipping-method" value="standard-shipping" class="radio-input">
+                    <div class="radio-radio"></div>
+                    Standard Shipping
+                   </label>
+                   <label for="express-shipping" class="radio">
+                    <input type="radio" id="express-shipping" name="shipping-method" value="express-shipping" class="radio-input">
+                    <div class="radio-radio"></div>
+                    Express Shipping
+                </label>
                </div>
+               <div>
+                   <h2>Standard Shipping</h2>
+                   <p>Estimated Delivery 4-6 Days.</p>
+               </div>
+               <div>
+                <h2>Express Shipping</h2>
+                <p>Estimated Delivery 1-3 Days.</p>
+                <p>Only available in the greater Oslo area</p>
+            </div>
            </section>
 
         </div>
@@ -160,10 +148,10 @@
         <section>
             <div class="checkout-buttons">
                 <div class="back-cta">
-                 <a href="basket.html">Back</a>
+                 <a href="checkout-shipping.html">Back</a>
                 </div>
                 <div class="next-cta">
-                 <a href="checkout-shipping.html">Next</a>
+                 <a href="payment-success.html">Next</a>
                 </div>
             </div>
         </section>
