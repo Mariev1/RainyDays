@@ -407,6 +407,110 @@ select {
   height: 20px;
 }
 
+/* Product Detail Page */
+.product-details {
+  width: 100%;
+  padding: 60px 10vw;
+}
+.pdp-showcase {
+  width: 100%;
+}
+.pdp-showcase-big {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+.pdp-showcase-small {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.pdp-showcase-carousel {
+  display: flex;
+}
+.pdp-showcase-carousel-img {
+  flex-basis: 25%;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.details {
+  width: 100%;
+}
+.pdp-h {
+  color: #23778c;
+  font-weight: 800;
+  font-size: 2em;
+  margin: 20px 0;
+}
+.pdp-price {
+  font-size: 24px;
+  margin-top: 13px;
+}
+.pdp-sub-h {
+  margin: 40px 0 0 0;
+}
+
+.color-radio-btn {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+}
+.color-radio-btn:hover {
+  border: 3px solid #e37500;
+}
+.blue {
+  background: #3792cb;
+}
+.orange {
+  background: #ff9800;
+}
+.yellow {
+  background: #eee600;
+}
+
+.size-radio-btn {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e37500;
+  border: 3px solid #e37500;
+  margin: 10px 0 10px 0;
+  line-height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.size-radio-btn:hover {
+  color: #fff;
+  background: #e37500;
+}
+.add-basket-btn {
+  width: 285px;
+  height: 54px;
+  margin: 40px 0 0 0;
+  padding: auto;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  background: #e37500;
+  border: 3px solid #e37500;
+}
+.add-basket-btn:hover {
+  color: #e37500;
+  background: #fff;
+  border: 3px solid #e37500;
+}
+.pdp-description {
+  border: 3px solid red;
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* About */
 .banner-about {
   min-height: 50vh;
@@ -676,6 +780,24 @@ footer i {
     grid-template-columns: repeat(5, 1fr);
   }
 
+  /* Product Detail Page */
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .details {
+    width: 70%;
+    margin-left: 20px;
+  }
+  .color-radio-btn {
+    margin: 10px 10px 10px 0;
+  }
+  .size-radio-btn {
+    margin: 10px 10px 10px 0;
+  }
+  .add-basket-btn {
+    width: 327px;
+  }
   /* contact */
   .contact-box {
     display: flex;
