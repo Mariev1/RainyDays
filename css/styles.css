@@ -506,9 +506,43 @@ select {
   border: 3px solid #e37500;
 }
 .pdp-description {
-  border: 3px solid red;
   width: 80%;
   margin: 0 auto;
+}
+.pdp-customer {
+  display: flex;
+  margin: 20px 0 0 0;
+}
+.pdp-txt {
+  font-family: "Tinos", serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #000;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.pdp-sub-h3 {
+  margin: 0 8px 0 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: #23778c;
+}
+.customer-feedback {
+  width: 80%;
+  margin: 0 auto 40px auto;
+}
+.pdp-customer i {
+  font-size: 18px;
+  color: #e37500;
+}
+.pdp-customer p {
+  margin: 0 0 0 8px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #999;
+}
+.blue-line {
+  border-bottom: 2px solid #23778c;
 }
 
 /* About */
