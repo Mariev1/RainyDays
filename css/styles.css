@@ -801,6 +801,8 @@ select {
 .form-wrapper {
   margin-bottom: 30px;
   margin-left: 20px;
+  position: relative;
+  z-index: 1;
 }
 .form-wrapper input {
   width: 100%;
@@ -825,10 +827,13 @@ label {
   color: #23778c;
   height: 100%;
 }
+
+
 .checkout-buttons {
   display: flex;
   margin: 520px 5px 0 auto;
 }
+
 .back-cta a {
   background: #099999;
   color: #fff;
@@ -864,6 +869,7 @@ label {
   background-position: center;
   padding: 20px;
   margin: 300px 20px 20px 20px;
+  position: relative;
 }
 .progressbar {
   display: flex;
@@ -1226,6 +1232,8 @@ footer i {
   .form-wrapper {
     margin-bottom: 30px;
     margin-left: 0px;
+    position: relative;
+    z-index: 1;
   }
   .form-wrapper input {
     width: 100%;
@@ -1253,6 +1261,7 @@ footer i {
   .checkout-buttons {
     display: flex;
     margin-top: 280px;
+    
   }
   .back-cta a {
     background: #099999;

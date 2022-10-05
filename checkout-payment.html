@@ -90,29 +90,49 @@
             </div>
            </section>
            <section class="billing-form" id="shipping-radio">
-               <h2>Shipping & Billing</h2>
+               <h2>Payment</h2>
                <div class="form-shipping">
-                   <label for="standard-shipping" class="radio">
-                    <input type="radio" id="standard-shipping" name="shipping-method" value="standard-shipping" class="radio-input">
+                   <label for="Visa" class="radio">
+                    <input type="radio" id="Visa" name="shipping-method" value="Visa" class="radio-input">
                     <div class="radio-radio"></div>
-                    Standard Shipping
+                    Visa
                    </label>
-                   <label for="express-shipping" class="radio">
-                    <input type="radio" id="express-shipping" name="shipping-method" value="express-shipping" class="radio-input">
+                   <label for="mastercard" class="radio">
+                    <input type="radio" id="mastercard" name="shipping-method" value="mastercard" class="radio-input">
                     <div class="radio-radio"></div>
-                    Express Shipping
+                    Mastercard
+                </label>
+                    <label for="amex" class="radio">
+                    <input type="radio" id="amex" name="shipping-method" value="amex" class="radio-input">
+                    <div class="radio-radio"></div>
+                    American Express    
                 </label>
                </div>
-               <div>
-                   <h2>Standard Shipping</h2>
-                   <p>Estimated Delivery 4-6 Days.</p>
-               </div>
-               <div>
-                <h2>Express Shipping</h2>
-                <p>Estimated Delivery 1-3 Days.</p>
-                <p>Only available in the greater Oslo area</p>
-            </div>
            </section>
+           <section class="billing-form">
+            <h2>Shipping & Billing</h2>
+            <div class="form-wrapper">
+             <form action="submit.php" method="post">
+              
+                 <div class="form-box">
+                  <label for="cardholder">Name on Card</label>
+                  <input type="text" id="cardholder" class="form-input">
+                 </div>
+                 <div class="form-box">
+                    <label for="cardno">Card Number</label>
+                    <input type="number" id="cardno" class="form-input">
+                   </div>
+                 <div class="form-name">
+                     <label for="expdate">Expiry Date</label>
+                     <input type="month" id="Zip" class="form-input">
+                    </div>
+                    <div class="form-name">
+                     <label for="town-city">CVC</label>
+                     <input type="number" id="expdate" class="form-input">
+                    </div>
+             </form>
+            </div>
+        </section>
 
         </div>
         <div class="basket-container">
