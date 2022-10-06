@@ -23,7 +23,8 @@ ul {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: #23778c;
 }
 h1 {
@@ -545,6 +546,57 @@ select {
   border-bottom: 2px solid #23778c;
 }
 
+.popPdp {
+  margin: auto;
+  padding: 1em;
+  max-width: 45ch;
+  border: 8px solid #23778c;
+  border-radius: 20px;
+  box-shadow: 0 0 1em rgb(0 0 0 / .2);
+  text-align: center;
+}
+
+.popPdp i {
+  font-size: 70px;
+  color: #e37500;
+  margin: 20px auto 10px;
+}
+
+.popPdp h3 {
+  margin: 20px 15px 40px;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+.popPdp::backdrop {
+  background: rgb(0 0 0 / .4);
+}
+
+.popPdp button {
+  width: 285px;
+  height: 54px;
+  margin: 0px 20px 20px;
+  padding: auto;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  background: #e37500;
+  border: 3px solid #e37500;
+}
+
+.popPdp button:hover {
+  color: #e37500;
+  background: #fff;
+  border: 3px solid #e37500;
+}
+
+.popPdp button:hover {
+  color: #e37500;
+  background: #fff;
+  border: 3px solid #e37500;
+}
+
+
 /* About */
 .banner-about {
   min-height: 50vh;
@@ -790,6 +842,11 @@ select {
   font-size: 30px;
   margin: 20px 0 30px 20px;
   text-align: center;
+}
+
+.form-error {
+  display: none;
+  color: red;
 }
 
 .billing-form h2 {
@@ -1101,7 +1158,7 @@ footer i {
   }
 }
 
-@media (min-width: 1275px) {
+@media (min-width: 1400px) {
   .h-banner {
     font-size: 8em;
     padding-left: 8vw;
@@ -1229,6 +1286,8 @@ footer i {
   .billing-form h2 {
     margin: 30px 0 20px 0;
   }
+
+ 
   .form-wrapper {
     margin-bottom: 30px;
     margin-left: 0px;
@@ -1260,7 +1319,7 @@ footer i {
   }
   .checkout-buttons {
     display: flex;
-    margin-top: 280px;
+    margin-top: 360px;
     
   }
   .back-cta a {
