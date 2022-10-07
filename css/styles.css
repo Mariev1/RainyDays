@@ -847,6 +847,8 @@ select {
 .form-error {
   display: none;
   color: red;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .billing-form h2 {
@@ -1158,6 +1160,9 @@ footer i {
   }
 }
 
+
+
+
 @media (min-width: 1400px) {
   .h-banner {
     font-size: 8em;
@@ -1208,9 +1213,13 @@ footer i {
   .color-radio-btn {
     margin: 10px 10px 10px 0;
   }
+
+
   .size-radio-btn {
     margin: 10px 10px 10px 0;
   }
+
+
   .add-basket-btn {
     width: 327px;
   }

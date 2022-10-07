@@ -1,20 +1,3 @@
-
-console.log("Hello");
-
-const popPdp = document.querySelector(".popPdp");
-const openPopPdp = document.querySelector(".add-basket-btn");
-const closePopPdp = document.querySelector(".continueShoppingBtn");
-
-openPopPdp.addEventListener("click", () => {
-    popPdp.showModal();
-})
-
-closePopPdp.addEventListener("click", () => {
-    popPdp.close();
-})
-
-
-
 const form = document.querySelector("#checkoutform");
 
 const firstName = document.querySelector("#first-name");
@@ -29,91 +12,71 @@ const city = document.querySelector("#town-city");
 const cityError = document.querySelector("#cityError");
 const phone = document.querySelector("#phone");
 const phoneError = document.querySelector("#phoneError");
-const email = document.querySelector("#email");
+const email = document.querySelector("#formEmail");
 const emailError = document.querySelector("#emailError");
 
-const cardName = document.querySelector("#cardName");
-const cardNameError = document.querySelector("#cardNameError");
 
-
-
-function validateForm(){
-
-    if(checkLength(firstName.value, 0) === true) {
+function validateForm() {
+    
+    if (checkLength(firstName.value, 0) === true) {
         firstNameError.style.display = "none";
-    }
-    else {
+    } else {
         firstNameError.style.display = "block";
     }
-    
-    if(checkLength(lastName.value, 1) === true) {
+
+    if (checkLength(lastName.value, 3) === true) {
         lastNameError.style.display = "none";
-    }
-    else {
+    } else {
         lastNameError.style.display = "block";
     }
 
-    if(checkLength(adress.value, 1) === true) {
+    if (checkLength(adress.value, 3) === true) {
         adressError.style.display = "none";
-    }
-    else {
+    } else {
         adressError.style.display = "block";
     }
 
-    if(validateZip(zip.value) === true){
-        zipError.style.display = "none";
-    }
-    else {
-        zipError.style.display = "block";
-    }
-
-    if(checkLength(city.value, 1) === true) {
+    if (checkLength(city.value, 3) === true) {
         cityError.style.display = "none";
-    }
-    else {
+    } else {
         cityError.style.display = "block";
     }
 
-    if(validatePhone(phone.value) === true){
-        phoneError.style.display = "none";
+    if (validateZip(zip.value) === true) {
+        zipError.style.display = "none";
+    } else {
+        zipError.style.display = "block";
     }
-    else {
+
+    if (validatePhone(phone.value) === true) {
+        phoneError.style.display = "none";
+    } else {
         phoneError.style.display = "block";
     }
- 
 
-    if(validateEmail(email.value) === true){
+    if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
-    }
-    else {
+    } else {
         emailError.style.display = "block";
     }
-
-
-
-    if(checkLength(cardName.value, 4) === true) {
-        cardNameError.style.display = "none";
-    }
-    else {
-        cardNameError.style.display = "block";
-    }
- 
-
 }
 
 form.addEventListener("change", validateForm);
 
 function checkLength(value, len) {
-
-    if(value.trim().length > len) {
+    if (value.trim().length > len) {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
-
 }
 
+
+function validateZip(zip) {
+    const regEx = "NO", "\d{4}";
+    const patternMatches = regEx.test(zip);
+    return patternMatches;
+}
 
 
 function validatePhone(phone) {
@@ -122,15 +85,8 @@ function validatePhone(phone) {
     return patternMatches;
 }
 
-function validateZip(zip) {
-    const regEx = /^\d{4}$/;
-    const patternMatches = regEx.test(zip);
-    return patternMatches;
-}
-
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
-    const PatternMatches = regEx.test(email);
-    return PatternMatches;
+    const patternMatches = regEx.test(email);
+    return patternMatches;
 }
-
