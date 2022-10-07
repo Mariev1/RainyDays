@@ -73,7 +73,7 @@ function checkLength(value, len) {
 
 
 function validateZip(zip) {
-    const regEx = "NO", "\d{4}";
+    const regEx = /^\d{4}$/;
     const patternMatches = regEx.test(zip);
     return patternMatches;
 }

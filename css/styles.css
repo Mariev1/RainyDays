@@ -500,6 +500,7 @@ select {
   color: #fff;
   background: #e37500;
   border: 3px solid #e37500;
+  cursor: pointer;
 }
 .add-basket-btn:hover {
   color: #e37500;
